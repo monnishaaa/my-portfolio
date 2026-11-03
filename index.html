@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b080b">
+
+    <title>Monisha Pavendan | Networking & Network Security</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0b080b;
+            position: relative;
+            isolation: isolate;
+        }
+
+        #network-background {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(45, 8, 22, 0.45);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(255, 139, 155, 0.18);
+        }
+
+        main,
+        .site-footer {
+            position: relative;
+            z-index: 1;
+        }
+
+        .modal-overlay {
+            z-index: 9999;
+        }
+
+        .skill-card {
+            font: inherit;
+            color: inherit;
+            text-align: left;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .skill-card h3,
+        .skill-card p {
+            text-align: left;
+        }
+
+        .skill-card:focus-visible {
+            outline: 2px solid #d83258;
+            outline-offset: 4px;
+        }
+
+        .modal-overlay[hidden] {
+            display: none !important;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-content {
+            position: relative;
+            max-height: 85vh;
+            overflow-y: auto;
+            scrollbar-width: none;
+        }
+
+        .modal-content::-webkit-scrollbar {
+            display: none;
+        }
+
+        .modal-close {
+            display: none !important;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="network-background" aria-hidden="true"></canvas>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="sparkle-container" aria-hidden="true"></div>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">MONISHA PAVENDAN</a>
+
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="hero container">
+
+            <h1>Hi, I'm <span>Monisha Pavendan</span></h1>
+
+            <h2>Networking & Network Security Enthusiast</h2>
+
+            <p>
+                Passionate about computer networks, network security,
+                troubleshooting, and developing practical technical skills.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">Explore My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section container">
+
+            <h2 class="section-title">About <span>Me</span></h2>
+
+            <div class="about-content">
+
+                <p>
+                    I am an Electronics and Communication Engineering student
+                    interested in networking, network security, and IT
+                    infrastructure. I enjoy learning networking concepts,
+                    practising configurations, and understanding how to
+                    identify and troubleshoot network issues.
+                </p>
+
+                <p>
+                    I have gained technical exposure through an internship
+                    and certification-based learning. My goal is to develop
+                    practical skills and build a career in networking,
+                    network operations, or technical security.
+                </p>
+
+            </div>
+        </section>
+
+<!-- TECHNICAL SKILLS -->
+<section id="skills" class="section container">
+
+    <h2 class="section-title">Technical <span>Skills</span></h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Networking</h3>
+            <p>
+                Computer Networking, TCP/IP, OSI Model, IPv4 Addressing,
+                Subnetting, Routing & Switching, Network Troubleshooting.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Network Security</h3>
+            <p>
+                Network Security Fundamentals, Firewall Concepts,
+                Ethical Hacking (Basics), Vulnerability Assessment (Basics),
+                SIEM (Basics), MITRE ATT&CK Framework.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Programming Languages</h3>
+            <p>
+                Python, JavaScript, C Programming (Basics).
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>
+                HTML, CSS, React.js, Node.js, Express.js,
+                REST APIs, JWT Authentication.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Database & Tools</h3>
+            <p>
+                MongoDB, MongoDB Atlas, GitHub, VS Code,
+                Cisco Packet Tracer, Render.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Electronics & IoT</h3>
+            <p>
+                Internet of Things (IoT), ESP32, Arduino IDE,
+                Sensors & Actuators, Embedded Systems, PLC Fundamentals.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section container">
+
+            <h2 class="section-title">Project <span>Works</span></h2>
+
+            <div class="card-container">
+
+                <button type="button" class="card skill-card"
+                    onclick="openPortfolioPopup('waste')">
+                    <h3>Smart Waste Management</h3>
+                    <p>IoT-based waste segregation monitoring and management.</p>
+                </button>
+
+                <button type="button" class="card skill-card"
+                    onclick="openPortfolioPopup('labs')">
+                    <h3>Networking Practice Labs</h3>
+                    <p>Networking concepts and practical configuration exercises.</p>
+                </button>
+
+                <button type="button" class="card skill-card"
+                    onclick="openPortfolioPopup('securityProject')">
+                    <h3>Network Security Learning</h3>
+                    <p>Exploring network security concepts and threat analysis.</p>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCE AND CERTIFICATIONS -->
+        <section id="experience" class="section container">
+
+            <h2 class="section-title">Experience & <span>Certifications</span></h2>
+
+            <div class="card-container">
+
+                <button type="button" class="card skill-card"
+                    onclick="openPortfolioPopup('internship')">
+                    <h3>Technical Security Intern</h3>
+                    <p>Hitachi Systems India Pvt. Ltd.</p>
+                    <p class="card-date">November 2025 – December 2025</p>
+                </button>
+
+                <button type="button" class="card skill-card"
+                    onclick="openPortfolioPopup('ccst')">
+                    <h3>CCST Networking</h3>
+                    <p>Cisco certification preparation</p>
+                    <p class="card-date">In Progress</p>
+                </button>
+
+                <button type="button" class="card skill-card"
+                    onclick="openPortfolioPopup('ccna')">
+                    <h3>CCNA</h3>
+                    <p>Cisco certification preparation</p>
+                    <p class="card-date">In Progress</p>
+                </button>
+
+            </div>
+        </section>
+
+        
+
+        <!-- RESUME: OPEN SECTION, NO CARD -->
+        <section id="resume" class="section container">
+
+            <h2 class="section-title">My <span>Resume</span></h2>
+
+            <p>
+                Explore my educational background, technical skills,
+                internship experience, and certifications.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="resume.pdf" target="_blank"
+                    rel="noopener noreferrer" class="btn">
+                    View Resume
+                </a>
+
+                <a href="resume.pdf" download class="btn btn-outline">
+                    Download Resume
+                </a>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section container">
+
+            <h2 class="section-title">Contact <span>Me</span></h2>
+
+            <p>
+                I am interested in opportunities related to networking,
+                network operations, IT support, and technical security.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="mailto:monishapavendanvel@gmail.com">
+                    Email Me
+                </a>
+
+                <a href="https://www.linkedin.com/in/monishapavendan/"
+                    target="_blank" rel="noopener noreferrer">
+                    LinkedIn Profile
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- SHARED POPUP -->
+        <div class="modal-overlay" id="networking-modal"
+            role="presentation" hidden
+            onclick="handleModalBackdrop(event)">
+
+            <section class="modal-content"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="modal-title"
+                onclick="event.stopPropagation()">
+
+
+                <h2 id="modal-title">Details</h2>
+
+                <div id="modal-body"></div>
+
+            </section>
+        </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Monisha Pavendan. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        /* =====================================
+           POPUP CONTENT
+        ===================================== */
+
+        const portfolioDetails = {
+
+            networking: {
+                title: "Networking Fundamentals",
+                intro: "Foundational concepts used to understand how computer networks communicate.",
+                sections: [
+                    {
+                        heading: "Topics",
+                        items: [
+                            "OSI and TCP/IP models",
+                            "LAN, WAN and network topologies",
+                            "Ethernet and MAC addresses",
+                            "Common network protocols",
+                            "Bandwidth, throughput and latency"
+                        ]
+                    }
+                ]
+            },
+
+            ip: {
+                title: "IP Addressing",
+                intro: "Understanding how devices are addressed and communicate across IP networks.",
+                sections: [
+                    {
+                        heading: "Topics",
+                        items: [
+                            "IPv4 addressing",
+                            "Subnet masks and CIDR notation",
+                            "Network ID and broadcast address",
+                            "Usable host ranges",
+                            "Subnetting practice"
+                        ]
+                    }
+                ]
+            },
+
+            routing: {
+                title: "Routing & Switching",
+                intro: "Learning how network devices forward traffic within and between networks.",
+                sections: [
+                    {
+                        heading: "Topics",
+                        items: [
+                            "Switching fundamentals",
+                            "Routing table concepts",
+                            "Default gateways",
+                            "Basic router and switch configuration",
+                            "VLAN concepts"
+                        ]
+                    }
+                ]
+            },
+
+            security: {
+                title: "Network Security",
+                intro: "Building a foundation in protecting networks, devices and data.",
+                sections: [
+                    {
+                        heading: "Topics",
+                        items: [
+                            "Network security fundamentals",
+                            "Firewalls and access controls",
+                            "Endpoint security concepts",
+                            "SIEM and log-monitoring fundamentals",
+                            "MITRE ATT&CK framework"
+                        ]
+                    }
+                ]
+            },
+
+            troubleshooting: {
+                title: "Network Troubleshooting",
+                intro: "Identifying and investigating common network connectivity problems.",
+                sections: [
+                    {
+                        heading: "Methods",
+                        items: [
+                            "Checking IP configuration",
+                            "Using ping to test connectivity",
+                            "Using tracert or traceroute",
+                            "Using ipconfig or ifconfig",
+                            "Checking DNS and gateway connectivity"
+                        ]
+                    }
+                ]
+            },
+
+            tools: {
+                title: "Networking Tools",
+                intro: "Tools and utilities used for networking practice and diagnosis.",
+                sections: [
+                    {
+                        heading: "Tools",
+                        items: [
+                            "Cisco Packet Tracer",
+                            "Command-line networking utilities",
+                            "IP configuration tools",
+                            "Connectivity testing commands"
+                        ]
+                    }
+                ]
+            },
+
+            waste: {
+                title: "Smart Waste Management Sytem",
+                intro: "An IoT-based project concept for monitoring waste segregation and collection.",
+                sections: [
+                    {
+                        heading: "Project Overview",
+                        items: [
+                            "Organises waste into plastic, glass, paper, metal, organic and e-waste categories.",
+                            "Supports household-level waste collection records.",
+                            "Tracks accepted and rejected waste.",
+                            "Supports reporting and awareness activities."
+                        ]
+                    },
+                    {
+                        heading: "Technologies",
+                        items: [
+                            "React.js",
+                            "Node.js and Express.js",
+                            "MongoDB",
+                            "IoT sensors and monitoring"
+                        ]
+                    }
+                ]
+            },
+
+            labs: {
+                title: "Networking Practice Labs",
+                intro: "Hands-on practice for developing networking knowledge and troubleshooting skills.",
+                sections: [
+                    {
+                        heading: "Practice Areas",
+                        items: [
+                            "IP addressing and subnetting exercises",
+                            "Network device connectivity",
+                            "Basic routing and switching concepts",
+                            "Network troubleshooting commands"
+                        ]
+                    },
+                    {
+                        heading: "Tools",
+                        items: [
+                            "Cisco Packet Tracer",
+                            "Command-line networking utilities"
+                        ]
+                    }
+                ]
+            },
+
+            securityProject: {
+                title: "Network Security Learning",
+                intro: "Learning about network defence and security monitoring concepts.",
+                sections: [
+                    {
+                        heading: "Learning Areas",
+                        items: [
+                            "Network security principles",
+                            "Firewalls and security controls",
+                            "SIEM and log-monitoring concepts",
+                            "MITRE ATT&CK fundamentals",
+                            "Vulnerability assessment concepts"
+                        ]
+                    }
+                ]
+            },
+
+            internship: {
+                title: "Technical Security Internship",
+                intro: "Technical security internship experience at Hitachi Systems India Pvt. Ltd.",
+                sections: [
+                    {
+                        heading: "Areas of Exposure",
+                        items: [
+                            "Networking fundamentals and IP addressing",
+                            "Routers, switches and network protocols",
+                            "Enterprise security concepts",
+                            "Firewalls and endpoint protection",
+                            "SIEM and log-monitoring concepts",
+                            "Vulnerability assessment fundamentals"
+                        ]
+                    }
+                ]
+            },
+
+            ccst: {
+                title: "CCST Networking",
+                intro: "Preparing for the Cisco Certified Support Technician (CCST) Networking certification.",
+                sections: [
+                    {
+                        heading: "Current Preparation",
+                        items: [
+                            "Networking fundamentals",
+                            "IP addressing and subnetting",
+                            "Network connectivity and troubleshooting"
+                        ]
+                    }
+                ]
+            },
+
+            ccna: {
+                title: "CCNA",
+                intro: "Preparing for the Cisco Certified Network Associate (CCNA) certification.",
+                sections: [
+                    {
+                        heading: "Current Preparation",
+                        items: [
+                            "Network access and IP connectivity",
+                            "IP services and security fundamentals",
+                            "Routing, switching and troubleshooting"
+                        ]
+                    }
+                ]
+            },
+
+            learning: {
+                title: "Continuous Learning",
+                intro: "Ongoing learning for networking, network operations and technical security roles.",
+                sections: [
+                    {
+                        heading: "Current Focus",
+                        items: [
+                            "Cisco networking courses",
+                            "Subnetting and IP addressing",
+                            "Routing and switching",
+                            "Network security fundamentals",
+                            "Hands-on networking labs"
+                        ]
+                    }
+                ]
+            }
+
+        };
+
+
+        /* OPEN POPUP */
+
+        function openPortfolioPopup(key) {
+
+            const details = portfolioDetails[key];
+
+            if (!details) return;
+
+            const modal = document.getElementById("networking-modal");
+            const title = document.getElementById("modal-title");
+            const body = document.getElementById("modal-body");
+
+            title.textContent = details.title;
+
+            body.replaceChildren();
+
+            const intro = document.createElement("p");
+            intro.className = "modal-intro";
+            intro.textContent = details.intro;
+
+            body.appendChild(intro);
+
+            details.sections.forEach(section => {
+
+                const sectionElement = document.createElement("div");
+                sectionElement.className = "modal-detail-section";
+
+                const heading = document.createElement("h3");
+                heading.textContent = section.heading;
+
+                sectionElement.appendChild(heading);
+
+                const list = document.createElement("ul");
+
+                section.items.forEach(item => {
+
+                    const listItem = document.createElement("li");
+                    listItem.textContent = item;
+
+                    list.appendChild(listItem);
+
+                });
+
+                sectionElement.appendChild(list);
+                body.appendChild(sectionElement);
+
+            });
+
+            modal.hidden = false;
+            modal.classList.add("active");
+            document.body.classList.add("modal-open");
+
+        }
+
+
+        /* CLOSE POPUP */
+
+        function closePortfolioPopup() {
+
+            const modal = document.getElementById("networking-modal");
+
+            modal.hidden = true;
+            modal.classList.remove("active");
+            document.body.classList.remove("modal-open");
+
+        }
+
+
+        /* CLOSE WHEN CLICKING OUTSIDE */
+
+        function handleModalBackdrop(event) {
+
+            if (event.target.id === "networking-modal") {
+                closePortfolioPopup();
+            }
+
+        }
+
+
+        /* CLOSE WITH ESCAPE */
+
+        document.addEventListener("keydown", function(event) {
+
+            if (
+                event.key === "Escape" &&
+                !document.getElementById("networking-modal").hidden
+            ) {
+                closePortfolioPopup();
+            }
+
+        });
+
+
+        /* FOOTER YEAR */
+
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+
+
+        /* CUSTOM CURSOR AND SPARKLE TRAIL */
+
+        (() => {
+
+            if (
+                !window.matchMedia("(pointer: fine)").matches ||
+                window.matchMedia("(prefers-reduced-motion: reduce)").matches
+            ) return;
+
+            const dot = document.querySelector(".cursor-dot");
+            const ring = document.querySelector(".cursor-ring");
+            const trail = document.querySelector(".sparkle-container");
+
+            if (!dot || !ring || !trail) return;
+
+            let x = innerWidth / 2;
+            let y = innerHeight / 2;
+
+            let ringX = x;
+            let ringY = y;
+
+            let lastSparkle = 0;
+            let activeSparkles = 0;
+
+            document.addEventListener("mousemove", (event) => {
+
+                x = event.clientX;
+                y = event.clientY;
+
+                dot.style.left = `${x}px`;
+                dot.style.top = `${y}px`;
+
+                const now = performance.now();
+
+                if (now - lastSparkle > 55 && activeSparkles < 24) {
+
+                    const sparkle = document.createElement("span");
+
+                    sparkle.className = "cursor-sparkle";
+
+                    sparkle.textContent =
+                        Math.random() > 0.5 ? "✦" : "·";
+
+                    sparkle.style.left =
+                        `${x + Math.random() * 14 - 7}px`;
+
+                    sparkle.style.top =
+                        `${y + Math.random() * 14 - 7}px`;
+
+                    sparkle.style.setProperty(
+                        "--sparkle-drift-x",
+                        `${Math.random() * 30 - 15}px`
+                    );
+
+                    sparkle.style.setProperty(
+                        "--sparkle-drift-y",
+                        `${-12 - Math.random() * 24}px`
+                    );
+
+                    trail.appendChild(sparkle);
+
+                    activeSparkles++;
+                    lastSparkle = now;
+
+                    window.setTimeout(() => {
+
+                        sparkle.remove();
+
+                        activeSparkles =
+                            Math.max(0, activeSparkles - 1);
+
+                    }, 720);
+
+                }
+
+            }, { passive: true });
+
+
+            function animateRing() {
+
+                ringX += (x - ringX) * 0.2;
+                ringY += (y - ringY) * 0.2;
+
+                ring.style.left = `${ringX}px`;
+                ring.style.top = `${ringY}px`;
+
+                requestAnimationFrame(animateRing);
+
+            }
+
+            animateRing();
+
+
+            document.querySelectorAll("a, button, [role='button']")
+                .forEach((item) => {
+
+                    item.addEventListener("mouseenter", () => {
+                        ring.classList.add("is-hovering");
+                    });
+
+                    item.addEventListener("mouseleave", () => {
+                        ring.classList.remove("is-hovering");
+                    });
+
+                });
+
+        })();
+
+
+        /* RED ACTIVE STATE FOR BUTTONS */
+
+        document.querySelectorAll(".hero-buttons .btn")
+            .forEach(button => {
+
+                button.addEventListener("click", function () {
+
+                    document.querySelectorAll(".hero-buttons .btn")
+                        .forEach(btn => {
+                            btn.classList.remove("clicked");
+                        });
+
+                    this.classList.add("clicked");
+
+                });
+
+            });
+
+
+        /* ANIMATED NETWORK PARTICLE BACKGROUND */
+
+        (() => {
+
+            const canvas = document.getElementById("network-background");
+            const ctx = canvas.getContext("2d");
+
+            if (!ctx) return;
+
+            let width = 0;
+            let height = 0;
+
+            let particles = [];
+            let lastFrame = 0;
+
+            const reducedMotion = window.matchMedia(
+                "(prefers-reduced-motion: reduce)"
+            ).matches;
+
+
+            function createParticles() {
+
+                const count = Math.min(
+                    110,
+                    Math.max(
+                        35,
+                        Math.floor((width * height) / 11000)
+                    )
+                );
+
+                particles = Array.from({ length: count }, () => ({
+
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+
+                    vx: (Math.random() - 0.5) * 0.65,
+                    vy: (Math.random() - 0.5) * 0.65,
+
+                    radius: Math.random() * 1.5 + 0.7
+
+                }));
+
+            }
+
+
+            function resizeCanvas() {
+
+                const dpr = Math.min(
+                    window.devicePixelRatio || 1,
+                    2
+                );
+
+                width = window.innerWidth;
+                height = window.innerHeight;
+
+                canvas.width = width * dpr;
+                canvas.height = height * dpr;
+
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+                createParticles();
+                drawScene();
+
+            }
+
+
+            function drawScene() {
+
+                ctx.clearRect(0, 0, width, height);
+
+                const connectionDistance = 145;
+
+                for (let i = 0; i < particles.length; i++) {
+
+                    const p = particles[i];
+
+                    if (!reducedMotion) {
+
+                        p.x += p.vx;
+                        p.y += p.vy;
+
+                        if (p.x < 0 || p.x > width) p.vx *= -1;
+                        if (p.y < 0 || p.y > height) p.vy *= -1;
+
+                        p.x = Math.max(0, Math.min(width, p.x));
+                        p.y = Math.max(0, Math.min(height, p.y));
+
+                    }
+
+
+                    for (let j = i + 1; j < particles.length; j++) {
+
+                        const q = particles[j];
+
+                        const dx = p.x - q.x;
+                        const dy = p.y - q.y;
+
+                        const distance = Math.hypot(dx, dy);
+
+                        if (distance < connectionDistance) {
+
+                            const opacity =
+                                (1 - distance / connectionDistance) * 0.32;
+
+                            ctx.beginPath();
+
+                            ctx.moveTo(p.x, p.y);
+                            ctx.lineTo(q.x, q.y);
+
+                            ctx.strokeStyle =
+                                `rgba(190, 35, 75, ${opacity})`;
+
+                            ctx.lineWidth = 0.7;
+                            ctx.stroke();
+
+                        }
+
+                    }
+
+
+                    ctx.beginPath();
+
+                    ctx.arc(
+                        p.x,
+                        p.y,
+                        p.radius,
+                        0,
+                        Math.PI * 2
+                    );
+
+                    ctx.fillStyle = "rgba(235, 55, 95, 0.85)";
+
+                    ctx.shadowBlur = 8;
+                    ctx.shadowColor = "rgba(200, 25, 65, 0.6)";
+
+                    ctx.fill();
+
+                    ctx.shadowBlur = 0;
+
+                }
+
+            }
+
+
+            function animate(timestamp) {
+
+                if (timestamp - lastFrame >= 30) {
+
+                    drawScene();
+                    lastFrame = timestamp;
+
+                }
+
+                if (!reducedMotion) {
+                    requestAnimationFrame(animate);
+                }
+
+            }
+
+
+            window.addEventListener("resize", resizeCanvas);
+
+            resizeCanvas();
+
+            if (!reducedMotion) {
+                requestAnimationFrame(animate);
+            }
+
+        })();
+
+    </script>
+
+</body>
+</html>
